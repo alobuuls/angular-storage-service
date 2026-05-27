@@ -1,27 +1,149 @@
-# AngularLocalSessionStorage
+# 💾 Angular Storage Service
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Aplicación desarrollada en **Angular 16** que implementa un sistema reutilizable para manejar persistencia de datos usando **localStorage**.
 
-## Development server
+El proyecto demuestra cómo abstraer el almacenamiento del navegador mediante servicios reutilizables y guardar información proveniente de formularios reactivos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Requisitos del sistema
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de ejecutar el proyecto asegúrate de tener instalado:
 
-## Build
+- 📦 **Node.js:** `v18+` *(preferiblemente v18.10.0)*
+- 📦 **npm:** `v9+`
+- 🅰️ **Angular CLI:** `v16.x`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🔍 Verificar versiones
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecuta:
 
-## Running end-to-end tests
+```bash
+node -v
+npm -v
+ng version
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🚀 Instalación
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 1️⃣ Clonar repositorio
+
+```bash
+git clone <URL_DEL_REPO>
+
+cd angular-storage-service
+```
+
+### 2️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Ejecutar proyecto
+
+```bash
+ng serve
+```
+
+Abrir:
+
+```bash
+http://localhost:4200
+```
+
+---
+
+## 🧠 Arquitectura proyecto
+
+### 📦 Storage Layer
+
+```bash
+storage/
+├── storage.ts
+└── local-storage.service.ts
+```
+
+Implementa:
+
+- Servicio abstracto para Storage API
+- Persistencia reutilizable
+- Serialización automática JSON
+- Lectura tipada
+
+---
+
+### 📦 Forms
+
+Formulario reactivo para almacenar:
+
+```txt
+Nombre
+Queja
+```
+
+Los datos se guardan automáticamente en:
+
+```txt
+localStorage
+```
+
+---
+
+## ⚙️ Funcionalidades implementadas
+
+✔ Formularios reactivos  
+✔ Persistencia LocalStorage  
+✔ Servicios reutilizables  
+✔ Serialización JSON  
+✔ Lectura tipada  
+✔ Abstracción Storage API  
+✔ Guardado de datos en navegador  
+
+---
+
+## 🛠 Tecnologías usadas
+
+- 🅰️ Angular 16
+- ⚡ TypeScript
+- 🧾 Reactive Forms
+- 💾 Browser LocalStorage API
+
+---
+
+## 📁 Estructura proyecto
+
+```bash
+src/app/
+
+storage/
+├── storage.ts
+└── local-storage.service.ts
+
+app.component.ts
+app.component.html
+app.module.ts
+```
+
+---
+
+## 🔥 Buenas prácticas implementadas
+
+- Inyección de dependencias
+- Servicios reutilizables
+- Programación orientada a abstracción
+- Persistencia desacoplada
+- Tipado con TypeScript
+- Formularios reactivos
+
+---
+
+## 📄 Licencia
+
+Proyecto creado con fines educativos y portafolio.
